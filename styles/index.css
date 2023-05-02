@@ -1,0 +1,15 @@
+main h1 {
+  text-align: center;
+}
+
+main div {
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+}
+
+main section {
+  border: 2px solid;
+  border-radius: 10px;
+  padding: 20px;
+}
