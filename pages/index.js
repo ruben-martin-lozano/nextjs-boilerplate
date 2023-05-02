@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Head from 'next/head'
 import Image from 'next/image'
 
@@ -68,7 +69,7 @@ Another approach would be a URL in a JSON response from the endpoint and redirec
           <form action='/api/same-domain/1' method='POST'>
             <input type='submit' value='✅ Form Submit (POST/GET)' />
           </form>
-          <a href='/api/same-domain/1'>✅ HTML anchor link (GET)</a>
+          <Link href='/api/same-domain/1'>✅ HTML anchor link (GET)</Link>
         </section>
 
         <section>
@@ -85,7 +86,7 @@ Another approach would be a URL in a JSON response from the endpoint and redirec
           <form action='/api/external-domain/1' method='POST'>
             <input type='submit' value='✅ Form Submit (POST/GET)' />
           </form>
-          <a href='/api/external-domain/1'>✅ HTML anchor link (GET)</a>
+          <Link href='/api/external-domain/1'>✅ HTML anchor link (GET)</Link>
         </section>
       </div>
       <pre>
