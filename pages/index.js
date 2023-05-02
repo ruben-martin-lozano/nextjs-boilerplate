@@ -47,7 +47,7 @@ export default function Index() {
 
 - CORS Errors for external domain.
 - Response text for same domain.
-- HTML has response but not parsed when replacing from same domain.
+- HTML has response but not fully parsed when replacing from same domain.
 
 Another approach would be a URL in a JSON response from the endpoint and redirect from JS`
 
