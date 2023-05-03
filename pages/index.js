@@ -49,15 +49,16 @@ export default function Index() {
 - CORS Errors for external domain.
 - Response text for same domain.
 - HTML has response but not fully parsed when replacing from same domain.
+- GET method not allowed with anchor link, just POST.
 
-Another approach would be a URL in a JSON response from the endpoint and redirect from JS`
+Another approach would be a URL in a JSON response from the endpoint and redirect from JS.`
 
   return (
     <main>
-      <h1>Request & Redirect examples</h1>
+      <h1>Request & Redirect examples with Internal/External domains</h1>
       <div>
         <section>
-          <h2>Same domain (/hello)</h2>
+          <h2>Internal (/hello)</h2>
           <button onClick={() => fetchHandler('/api/same-domain/1')}>
             ❌ JS fetch (POST/GET)
           </button>
@@ -74,7 +75,7 @@ Another approach would be a URL in a JSON response from the endpoint and redirec
         </section>
 
         <section>
-          <h2>External domain (ms-re--publishers)</h2>
+          <h2>External (ms-re--publishers)</h2>
           <button onClick={() => fetchHandler('/api/external-domain/1')}>
             ❌ JS fetch (POST/GET)
           </button>
@@ -87,7 +88,7 @@ Another approach would be a URL in a JSON response from the endpoint and redirec
           <form action='http://ms-re--publishers.es-microfc-pro.heimdall.schip.io/v1/crm/customers/10f1413a-c0f1-40eb-8b7a-505fc559fb39/delegate?actor=valentina.espinal@adevinta.com' method='POST'>
             <input type='submit' value='✅ Form Submit (POST/GET)' />
           </form>
-          <Link href='http://ms-re--publishers.es-microfc-pro.heimdall.schip.io/v1/crm/customers/10f1413a-c0f1-40eb-8b7a-505fc559fb39/delegate?actor=valentina.espinal@adevinta.com'>✅ HTML anchor link (GET)</Link>
+          <Link href='http://ms-re--publishers.es-microfc-pro.heimdall.schip.io/v1/crm/customers/10f1413a-c0f1-40eb-8b7a-505fc559fb39/delegate?actor=valentina.espinal@adevinta.com'>❌ HTML anchor link (GET)</Link>
         </section>
       </div>
       <pre>
