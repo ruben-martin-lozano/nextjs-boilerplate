@@ -6,9 +6,9 @@ export default function Hello() {
   }, [])
 
   return (
-    <section className='hello'>
+    <>
       <h1>👋🏻 Hello</h1>
-      <p>¿Did you see the window.alert and brown background?</p>
-    </section>
+      <p>¿Did you see the window.alert?</p>
+    </>
   )
 }
