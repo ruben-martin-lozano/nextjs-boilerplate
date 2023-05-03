@@ -74,7 +74,7 @@ Another approach would be a URL in a JSON response from the endpoint and redirec
         </section>
 
         <section>
-          <h2>External domain (google.es)</h2>
+          <h2>External domain (ms-re--publishers)</h2>
           <button onClick={() => fetchHandler('/api/external-domain/1')}>
             ❌ JS fetch (POST/GET)
           </button>
@@ -84,10 +84,10 @@ Another approach would be a URL in a JSON response from the endpoint and redirec
           <button onClick={() => fetchHandler('/api/external-domain/1', true)}>
             ❌ JS & replace (POST/GET)
           </button>
-          <form action='/api/external-domain/1' method='POST'>
+          <form action='http://ms-re--publishers.es-microfc-pro.heimdall.schip.io/v1/crm/customers/10f1413a-c0f1-40eb-8b7a-505fc559fb39/delegate?actor=valentina.espinal@adevinta.com' method='POST'>
             <input type='submit' value='✅ Form Submit (POST/GET)' />
           </form>
-          <Link href='/api/external-domain/1'>✅ HTML anchor link (GET)</Link>
+          <Link href='http://ms-re--publishers.es-microfc-pro.heimdall.schip.io/v1/crm/customers/10f1413a-c0f1-40eb-8b7a-505fc559fb39/delegate?actor=valentina.espinal@adevinta.com'>✅ HTML anchor link (GET)</Link>
         </section>
       </div>
       <pre>
