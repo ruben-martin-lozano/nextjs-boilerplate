@@ -40,6 +40,7 @@ export default function Index() {
         console.log(response)
       }
     }
+    request.onerror = console.error
   }
 
   const msg =
